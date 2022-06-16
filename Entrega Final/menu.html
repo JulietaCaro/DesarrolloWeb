@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Carta Bodegon La Esquina</title>
+    <script src="https://kit.fontawesome.com/a240683ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="logo">BODEGON LA ESQUINA</h1>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li class="active"><a href="./menu.html">La carta</a></li>
+            <li class="ctn"><a href="./reservar.html">RESERVAR</a></li>
+        </ul>
+        <!--<img src="./imagenes/menu-btn.png" alt="icono menu" class="menu-btn">-->
+        <i class="fa-solid fa-bars menu-btn"></i>
+    </nav>
+
+    <!--LA CARTA-->
+    <section class="menu">
+        <div class="row">
+            <div class="col content-col">
+                <h1>CONOCE LA CARTA</h1>
+                <div class="line"></div>
+                <p>Contamos con un menú muy variado, con opciones para todos los gustos: vegetarianos, veganos, sin gluten. Además, tenemos un divertido menu para niños.</p>
+                <a href="#" class="ctn">Ver Menú</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./imagenes/pizza.jpg">
+                    <img src="./imagenes/burrata.png">
+                    <img src="./imagenes/pasta.jpg">
+                    <img src="./imagenes/tostado.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <section class="footer">
+        <p>Lima 775 C1073, Buenos Aires, Argentina | Teléfono: 011 4000 7600 | Email: jucaro@uade.edu.ar</p>
+        <p>Copyright &copy; All rights reserved</p>
+    </section>
+
+    <!--mobile-->
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>

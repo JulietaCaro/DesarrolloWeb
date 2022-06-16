@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodegon La Esquina</title>
+    <script src="https://kit.fontawesome.com/a240683ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">BODEGON LA ESQUINA</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="./menu2.html">La carta</a></li>
+            <li class="ctn"><a class="botonReservar" href="./reservar.html">RESERVAR</a></li>
+        </ul>
+        <!--<img src="./imagenes/menu-btn.png" alt="icono menu" class="menu-btn">-->
+        <i class="fa-solid fa-bars menu-btn"></i>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Vení a conocer nuestro bodegón</h2>
+            <div class="line"></div>
+            <h1>BODEGON LA ESQUINA</h1>
+            <h3>Comida familiar todos los dias</h3>
+        </div>
+    </header>
+
+    <!--Nuestro lugar-->
+    <section class="places">
+        <div class="title">
+            <h1>Nuestro lugar</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img class="imagen"src="./imagenes/salon.jpg" alt="salon">
+                <h4>El salon</h4>
+                <p>Nuestro querido salón cuenta con 25 mesas, calefacción para las noches de invierno y aire acondicionado para los días cálidos de verano.</p>
+            </div>
+            <div class="column">
+                <img class="imagen" src="./imagenes/patio.jpg" alt="salon">
+                <h4>El patio</h4>
+                <p>Nuestra parte de afuera fue diseñada por el fundador de La Esquina. Cuenta con calderas para el invierno y hay un total de 20 mesas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>Lima 775 C1073, Buenos Aires, Argentina | Teléfono: 011 4000 7600 | Email: jucaro@uade.edu.ar</p>
+        <p>Copyright &copy; All rights reserved</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>

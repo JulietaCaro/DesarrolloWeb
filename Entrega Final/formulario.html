@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a240683ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styleForm.css">
+    <title>Completa la reserva</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">BODEGON LA ESQUINA</h1>
+        <ul class="nav-links">
+            <li ><a href="./index.html">Home</a></li>
+            <li><a href="./menu2.html">La carta</a></li>
+            <li class="ctn" class="active" ><a class="botonReservar" href="./reservar.html">RESERVAR</a></li>
+        </ul>
+        <!--<img src="./imagenes/menu-btn.png" alt="icono menu" class="menu-btn">-->
+        <i class="fa-solid fa-bars menu-btn"></i>
+    </nav>
+
+    <div id="overlay">
+        <form onsubmit="event.preventDefault(); validateForm()">
+            <h1>Reserva tu mesa</h1>
+
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Juan">
+            <small class="error"></small>
+
+            <label for="surname">Apellido:</label>
+            <input type="text" id="surname" placeholder="Perez">
+            <small class="error"></small>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="ejemplo@gmail.com">
+            <small class="error"></small>
+
+            <label for="phone">Teléfono:</label>
+            <input type="text" id="phone" placeholder="01123456789">
+            <small class="error"></small>
+
+            <label for="message">Comentario:</label>
+            <textarea id="message" placeholder="Escribenos algo que debamos saber..." rows="4"></textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <input type="submit" value="Realizar Reserva">
+                <p id="success"></p>
+            </div>
+        </form>    
+    </div>
+
+    <!--FOOTER-->
+    <section class="footer">
+        <p>Lima 775 C1073, Buenos Aires, Argentina | Teléfono: 011 4000 7600 | Email: jucaro@uade.edu.ar</p>
+        <p>Copyright &copy; All rights reserved</p>
+    </section>
+
+    <!--mobile-->
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+</html>

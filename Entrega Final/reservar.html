@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservá Bodegon La Esquina</title>
+    <script src="https://kit.fontawesome.com/a240683ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+        <nav class="navbar">
+            <h1 class="logo">BODEGON LA ESQUINA</h1>
+            <ul class="nav-links">
+                <li ><a href="./index.html">Home</a></li>
+                <li><a href="./menu2.html">La carta</a></li>
+                <li class="ctn" class="active" ><a class="botonReservar" href="./reservar.html">RESERVAR</a></li>
+            </ul>
+            <!--<img src="./imagenes/menu-btn.png" alt="icono menu" class="menu-btn">-->
+            <i class="fa-solid fa-bars menu-btn"></i>
+        </nav>
+    <!--RESERVAR-->
+    <section class="reservar">
+        <div class="reservar-content">
+            <h1>RESERVA TU LUGAR</h1>
+            <div class="line"></div>
+            <p>¡No te quedes afuera! Podés reservar tu mesa para la fecha que más gustes cuando quieras y pasar un buen momento con familia o amigos junto a un rica comida.</p>
+            <a href="./formulario.html" class="ctn">Reservar</a>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <section class="footer">
+        <p>Lima 775 C1073, Buenos Aires, Argentina | Teléfono: 011 4000 7600 | Email: jucaro@uade.edu.ar</p>
+        <p>Copyright &copy; All rights reserved</p>
+    </section>
+
+    <!--mobile-->
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
